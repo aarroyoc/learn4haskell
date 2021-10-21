@@ -651,7 +651,7 @@ sumLast2 :: Int -> Int
 sumLast2 n =
   let
     a = lastDigit n
-    b = lastDigit (div n 10)
+    b = lastDigit (div (abs n) 10)
   in
     a + b
 
@@ -676,10 +676,10 @@ aren't ready for this boss yet!
 
 firstDigit :: Int -> Int
 firstDigit n =
-  if div n 10  == 0 then
-    mod n 10
+  if div (abs n) 10  == 0 then
+    mod (abs n) 10
   else
-    firstDigit (div n 10)
+    firstDigit (div (abs n) 10)
 
 
 {-
