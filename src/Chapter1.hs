@@ -492,7 +492,7 @@ Implement a function that returns the last digit of a given number.
 -}
 
 lastDigit :: Int -> Int
-lastDigit n = mod n 10
+lastDigit n = mod (abs n) 10
 
 
 {- |
