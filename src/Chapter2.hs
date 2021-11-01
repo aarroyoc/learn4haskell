@@ -363,7 +363,7 @@ Implement a function that returns only the first half of a given list.
 firstHalf :: [a] -> [a]
 firstHalf l = take half l
     where
-      half = (div (length l) 2)
+      half = div (length l) 2
 
 {- |
 =🛡= Pattern matching
