@@ -676,7 +676,7 @@ aren't ready for this boss yet!
 firstDigit :: Int -> Int
 firstDigit n =
   if div (abs n) 10  == 0 then
-    mod (abs n) 10
+    abs n
   else
     firstDigit (div (abs n) 10)
 
